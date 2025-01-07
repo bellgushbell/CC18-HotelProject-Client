@@ -100,7 +100,7 @@ function PromotionListShowAll() {
               <img
                 src={promo.img}
                 alt="Promotion"
-                className="w-2/3 h-full object-cover rounded-l-lg"
+                className="w-[200px] h-full object-cover rounded-l-lg"
               />
               <div className="flex flex-col justify-center items-center p-4 text-center">
                 <h3 className="text-orange-600 text-lg font-bold">
