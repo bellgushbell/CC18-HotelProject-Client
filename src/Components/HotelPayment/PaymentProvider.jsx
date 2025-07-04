@@ -11,8 +11,8 @@ import useBookingStore from "../../stores/booking-store";
 import { useShallow } from "zustand/shallow";
 const API = import.meta.env.VITE_API
 
-const stripePromise = loadStripe("pk_test_51QHdYyBU681vIFBkL7FTVXhlWjLIlvdVbeCAUK4UC8hTsHqUtxMvbb72EQVxIF9sUdU8aJQn3oeDgv17crnmXikJ006cLmV8Fz");
-
+// const stripePromise = loadStripe("pk_test_51QHdYyBU681vIFBkL7FTVXhlWjLIlvdVbeCAUK4UC8hTsHqUtxMvbb72EQVxIF9sUdU8aJQn3oeDgv17crnmXikJ006cLmV8Fz");
+const stripePromise = loadStripe("pk_test_51QHddSIdZP6xs5KfcWePGPewYV4O84Muncrv0bXmWW7vgGfoiep9oxhu0inJuFyCvwRK49CxMfD8jxGwbp0xPhKS00Bjvf926V");
 export default function PaymentProvider({ children }) {
     const {clientSecret , setClientSecret} =  useBookingStore(useShallow(state=>({
         clientSecret  :state.clientSecret,
